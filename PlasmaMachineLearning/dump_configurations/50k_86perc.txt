@@ -1,0 +1,23 @@
+Net(
+  (fcFF): Sequential(
+    (0): Linear(in_features=2576, out_features=800, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=800, out_features=400, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=400, out_features=200, bias=True)
+    (5): ReLU()
+    (6): Linear(in_features=200, out_features=100, bias=True)
+    (7): ReLU()
+    (8): Linear(in_features=100, out_features=200, bias=True)
+    (9): ReLU()
+    (10): Linear(in_features=200, out_features=400, bias=True)
+    (11): ReLU()
+    (12): Linear(in_features=400, out_features=800, bias=True)
+    (13): ReLU()
+    (14): Linear(in_features=800, out_features=66, bias=True)
+    (15): ReLU()
+    (16): Linear(in_features=66, out_features=66, bias=True)
+  )
+)
+
+optimizer = torch.optim.Adam(net.parameters(), lr=1e-4, amsgrad=False)
